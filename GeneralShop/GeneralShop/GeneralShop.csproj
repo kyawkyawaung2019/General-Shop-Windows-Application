@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3582AEB5-390E-4E2C-A432-BFBAC3B4C439}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GeneralShop</RootNamespace>
+    <AssemblyName>GeneralShop</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CreditorsDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreditorsDetail.Designer.cs">
+      <DependentUpon>CreditorsDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreditorsRevoke.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreditorsRevoke.Designer.cs">
+      <DependentUpon>CreditorsRevoke.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customers.Designer.cs">
+      <DependentUpon>Customers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomersList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomersList.Designer.cs">
+      <DependentUpon>CustomersList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomersRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomersRegistration.Designer.cs">
+      <DependentUpon>CustomersRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Creditors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Creditors.Designer.cs">
+      <DependentUpon>Creditors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Permission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Permission.Designer.cs">
+      <DependentUpon>Permission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductsList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductsList.Designer.cs">
+      <DependentUpon>ProductsList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase.Designer.cs">
+      <DependentUpon>Purchase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report.Designer.cs">
+      <DependentUpon>Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sale.Designer.cs">
+      <DependentUpon>Sale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StaffRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffRegistration.Designer.cs">
+      <DependentUpon>StaffRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stock.Designer.cs">
+      <DependentUpon>Stock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Suppliers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Suppliers.Designer.cs">
+      <DependentUpon>Suppliers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SuppliersList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuppliersList.Designer.cs">
+      <DependentUpon>SuppliersList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SuppliersRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuppliersRegistration.Designer.cs">
+      <DependentUpon>SuppliersRegistration.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CreditorsDetail.resx">
+      <DependentUpon>CreditorsDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreditorsRevoke.resx">
+      <DependentUpon>CreditorsRevoke.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customers.resx">
+      <DependentUpon>Customers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomersList.resx">
+      <DependentUpon>CustomersList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomersRegistration.resx">
+      <DependentUpon>CustomersRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Creditors.resx">
+      <DependentUpon>Creditors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Permission.resx">
+      <DependentUpon>Permission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductsList.resx">
+      <DependentUpon>ProductsList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase.resx">
+      <DependentUpon>Purchase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sale.resx">
+      <DependentUpon>Sale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stock.resx">
+      <DependentUpon>Stock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuppliersList.resx">
+      <DependentUpon>SuppliersList.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Logo.ico" />
+    <None Include="Resources\CreditRecord.png" />
+    <None Include="Resources\CreditSale.png" />
+    <None Include="Resources\Refresh.png" />
+    <None Include="Resources\Stock.png" />
+    <None Include="Resources\Report.jpg" />
+    <None Include="Resources\Purchase.jpg" />
+    <None Include="Resources\saleButton.jpg" />
+    <None Include="Resources\pbPermission.jpg" />
+    <None Include="Resources\PerBackground.JPG" />
+    <None Include="Resources\Creditors.jpg" />
+    <None Include="Resources\Suppliers.jpg" />
+    <None Include="Resources\Customers.jpg" />
+    <None Include="Resources\Reports.jpg" />
+    <None Include="Resources\Sale.png" />
+    <None Include="Resources\HomeBackground.JPG" />
+    <None Include="Resources\Lock.JPG" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
